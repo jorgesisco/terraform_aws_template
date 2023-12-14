@@ -1,3 +1,6 @@
-# terraform_aws_template
-# terraform_aws_template
-# terraform_aws_template
+# Terraform AWS
+
+## Description
+
+I brief IaC on using Terraform to create AWS resources.
+
