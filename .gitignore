@@ -1,6 +1,6 @@
 .idea
 
-tf_vars.sh
+scripts/tf_vars.sh
 
 /.terraform
 /.terraform.lock.hcl
