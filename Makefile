@@ -7,12 +7,13 @@ project="project_name"
 # This keys will be used to set EC2 and access it
 cert:
 	KEY_NAME=$(project)_key_$(env) && \
-	source "./certs/create.sh"
+	cd ./certs && \
+	source "../scripts/create_ssh_key.sh"
 
 plan:
-	source "./tf.sh" && \
+	source "./scripts/tf_vars.sh" && \
 	terraform plan
 
 apply:
-	source "./tf_vars.sh" && \
+	source "./scripts/tf_vars.sh" && \
 	terraform apply
